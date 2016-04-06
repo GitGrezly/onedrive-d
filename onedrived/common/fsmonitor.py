@@ -116,7 +116,8 @@ class FileSystemMonitor(threading.Thread):
     def _convert_delete_dir_to_move(self, drive, local_parent_path, ent_name):
 
         for t in self._delayed_tasks:
-            if isinstance(t, delete_task.DeleteItemTask)
+            if isinstance(t, delete_task.DeleteItemTask):
+                pass
 
     def _process_move_to_event(self, drive, local_parent_path, ent_name):
         local_path = local_parent_path + '/' + ent_name
